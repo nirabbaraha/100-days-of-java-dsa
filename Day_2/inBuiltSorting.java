@@ -1,13 +1,14 @@
 package Day_2;
-
 import java.util.Arrays;
+import java.util.Collections;
 
 public class inBuiltSorting {
     public static void main(String[] args) {
-        int arr[]={2,1,3,4,5,};
-        //sorting function
-        Arrays.sort(arr);
-        System.out.print(Arrays.toString(arr));
+        Integer arr[] = {2, 1, 3, 4, 5};
+        
+        // Sorting in descending order using Collections.reverseOrder()
+        Arrays.sort(arr, Collections.reverseOrder());
+        
+        System.out.println(Arrays.toString(arr));  // [5, 4, 3, 2, 1]
     }
-    
 }
