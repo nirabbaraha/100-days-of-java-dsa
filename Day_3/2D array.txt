@@ -1,0 +1,34 @@
+🔷 What is a 2D Array?
+A 2D array (two-dimensional array) is like a table or a matrix. It is a collection of data organized in rows and columns.
+Think of it as:
+
+| 1  2  3 |
+| 4  5  6 |
+| 7  8  9 |
+This 3×3 table is a 2D array with:
+3 rows
+3 columns
+
+🔷 How is it Stored in Memory?
+Even though it looks like a grid, in memory it's stored as a single continuous block (row by row). For example, the matrix above is stored like this in memory:
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+This is called row-major order (used in Java, C, C++).
+
+🔷 Indexing in 2D Array
+-> To access an element, we need:
+-> Row index (starts from 0)
+-> Column index (starts from 0)
+
+For example, matrix[1][2] means:
+-> 2nd row (index 1)
+-> 3rd column (index 2)
+-> So it gives the value 6 from the matrix above.
+
+🔷 Use Cases of 2D Arrays
+-> Grids in games (like chess, tic-tac-toe)
+-> Image pixels (rows × columns of colors)
+-> Maps and pathfinding algorithms
+-> Dynamic Programming problems (e.g. DP tables)
+-> Matrix operations in math and physics
+
+

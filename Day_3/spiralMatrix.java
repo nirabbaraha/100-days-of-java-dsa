@@ -1,5 +1,3 @@
-
-
 public class spiralMatrix {
     public static void spiralMatrix(int matrix[][]) {
         int startRow = 0;

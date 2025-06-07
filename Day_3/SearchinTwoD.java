@@ -1,4 +1,4 @@
-package Day_3;
+
 import java.util.*;
 public class SearchinTwoD {
     public static void SearchinTwoD(int matrix[][],int key){
