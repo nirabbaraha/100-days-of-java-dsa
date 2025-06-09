@@ -1,78 +1,49 @@
-# 📘 Theory: `String` in Java
+# 📘 Theory: 2D Arrays in Java
 
-In Java, a `String` is a sequence of characters used to represent textual data. It is one of the most commonly used classes in the Java Standard Library and belongs to the `java.lang` package.
+A **2D array** in Java is an array of arrays. It is used to represent data in a tabular or matrix form, consisting of rows and columns. Each element in a 2D array is identified using two indices: the row index and the column index.
 
----
-
-## 🔹 Characteristics of `String`
-
-- `String` is an **object**, not a primitive type.
-- It is **immutable**, meaning once a `String` object is created, its value cannot be changed.
-- Java maintains a **String pool** to optimize memory usage by reusing common string literals.
+In Java, a 2D array is actually an array where each element is a reference to another array. This means that the rows of a 2D array can have different lengths, which leads to the concept of **jagged arrays**.
 
 ---
 
-## 🔹 String Immutability
+## 🔹 Characteristics of 2D Arrays
 
-When you modify a `String`, you are actually creating a **new object**. The original `String` remains unchanged.
-
-Example:  
-If `String a = "Hello";`, then `a.toUpperCase()` returns `"HELLO"` but does **not** change `a`.
-
----
-
-## 🔹 String Pool (Interning)
-
-Java maintains a pool of string literals. When a new string literal is created, the JVM checks the pool:
-- If the string already exists, it returns a reference to the existing object.
-- If not, it adds the new string to the pool.
-
-This improves performance and reduces memory usage.
+- A 2D array is declared using two sets of square brackets, e.g., `int[][]`.
+- The first index refers to the row number.
+- The second index refers to the column number.
+- The array can be initialized with a fixed number of rows and columns, or with varying column sizes (jagged).
+- Java does not require all rows to be the same length.
 
 ---
 
-## 🔹 String vs. StringBuilder vs. StringBuffer
+## 🔹 Memory Representation
 
-| Feature         | String      | StringBuilder | StringBuffer |
-|-----------------|-------------|---------------|---------------|
-| Mutability      | Immutable   | Mutable       | Mutable       |
-| Thread-Safe     | No          | No            | Yes           |
-| Performance     | Slower for many changes | Fast | Slower due to synchronization |
+Internally, a 2D array in Java is stored as an array of references to arrays. This structure provides flexibility in terms of memory usage and layout, especially when using jagged arrays.
 
 ---
 
-## 🔹 Common Use Cases
+## 🔹 Jagged Arrays
 
-- Storing and processing text (e.g., user input, logs, file data)
-- Forming dynamic messages or queries
-- Data parsing and manipulation
-- Working with web content, configurations, and identifiers
+Java allows 2D arrays where each row has a different number of columns. These are called **jagged arrays** or **ragged arrays**. This is possible because each row is itself an array and can be initialized independently.
 
 ---
 
-## 🔹 Methods in `String` Class
+## 🔹 Use Cases
 
-Though `String` is immutable, Java provides many methods to operate on strings, such as:
-- `length()`
-- `charAt()`
-- `substring()`
-- `equals()` / `equalsIgnoreCase()`
-- `compareTo()`
-- `indexOf()` / `lastIndexOf()`
-- `toUpperCase()` / `toLowerCase()`
-- `trim()`
-- `replace()`
-- `split()`
-- `contains()`
+2D arrays are commonly used in:
 
-These return new `String` objects or other results based on the original.
+- Representing matrices in mathematical computations
+- Game development (e.g., grid-based games like chess or tic-tac-toe)
+- Image processing (e.g., storing pixel values)
+- Storing and manipulating tabular data
+- Graph and pathfinding algorithms (e.g., adjacency matrices)
 
 ---
 
 ## 🔹 Summary
 
-- A `String` in Java is a sequence of characters stored as an immutable object.
-- It is widely used and highly optimized for performance via interning.
-- String immutability makes Java strings thread-safe and memory-efficient in many use cases.
-- For heavy modifications, prefer `StringBuilder` or `StringBuffer`.
+- A 2D array is an array of arrays.
+- Java supports both uniform and jagged 2D arrays.
+- Elements are accessed using two indices: `[row][column]`.
+- Ideal for structured data representation such as tables and matrices.
 
