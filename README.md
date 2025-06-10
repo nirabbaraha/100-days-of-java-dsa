@@ -40,5 +40,4 @@ To build a strong foundation in Data Structures and Algorithms by:
 
 ---
 
-## 📁 Repository Structure
 
