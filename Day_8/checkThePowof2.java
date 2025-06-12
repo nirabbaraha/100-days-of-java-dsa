@@ -5,7 +5,7 @@ public class checkThePowof2 {
         return (n & (n-1))==0;
     }
     public static void main(String[] args) {
-        
+        System.out.println(checkThePowof2(4));
     }
     
 }
