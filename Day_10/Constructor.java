@@ -1,7 +1,5 @@
 package Day_10;
 
-import Student;
-
 public class Constructor {
     public static void main(String[] args) {
         Student s1=new Student("NirabBaraha",4);

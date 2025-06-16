@@ -1,3 +1,4 @@
+package Day_10;
 public class CopyConstructor {
     public static void main(String[] args) {
         Student s1 = new Student(); // default constructor is called
@@ -26,7 +27,7 @@ class Student {
     String password;
     int[] marks;
 
-    // ✅ Copy Constructor (Deep Copy)
+    //  Copy Constructor (Deep Copy)
     Student(Student s1) {
         this.name = s1.name;
         this.roll = s1.roll;
@@ -37,7 +38,7 @@ class Student {
         }
     }
 
-    // ✅ Default Constructor
+    // Default Constructor
     Student() {
         marks = new int[3]; // Initialize array to avoid NullPointerException
         System.out.print("Constructor is called");
