@@ -16,6 +16,7 @@ public class QuickSort {
         int pidx = partition(arr, si, ei);
         QuickSort(arr, si, pidx - 1);
         QuickSort(arr, pidx + 1, ei);
+        printArry(arr);
     }
 
     public static int partition(int arr[], int si, int ei) {
