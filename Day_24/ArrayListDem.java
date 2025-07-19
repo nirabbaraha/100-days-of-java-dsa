@@ -20,5 +20,11 @@ public class ArrayListDem {
         // remove the element
         list.remove(3);
         System.out.println(list);
+
+        //set
+        list.set(3,29);
+        System.out.println(list);
+
     }
+
 }
